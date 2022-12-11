@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  pytorch:
+    image: continuumio/anaconda3:2022.10
+    container_name: pytorch
+    ports:
+      - "8888:8888"
+    volumes: [
+      '$HOME/data/ai/pytorch/notebooks:/notebooks'
+    ]
+    tty: true
